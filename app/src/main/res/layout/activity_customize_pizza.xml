@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.colewhitley.pizzaappv2.CustomizePizza"
+    android:background="@color/background">
+
+    <Spinner
+        android:id="@+id/size_spinner"
+        android:layout_width="153dp"
+        android:layout_height="27dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:elevation="0dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grid_layout"
+        android:layout_marginStart="16dp" />
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/grid_layout"
+        android:layout_width="353dp"
+        android:layout_height="260dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:columnCount="3"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="3">
+
+
+        <ToggleButton
+            android:id="@+id/toggle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableTop="@drawable/ic_turkey"
+            android:fontFamily="sans-serif-medium"
+            android:paddingBottom="16dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="16dp"
+            android:textOff="Chicken"
+            android:textOn="Chicken"
+            android:textScaleX=".5"
+            android:textSize="14sp" />
+
+        <ToggleButton
+            android:id="@+id/toggle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="8dp"
+            android:drawableTop="@drawable/ic_sausage"
+            android:paddingBottom="16dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="48dp"
+            android:paddingTop="16dp"
+            android:textOff="Sausage"
+            android:textOn="Sausage"
+            android:textScaleX=".5" />
+
+        <ToggleButton
+            android:id="@+id/toggle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableTop="@drawable/ic_bacon"
+            android:paddingBottom="16dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="44dp"
+            android:paddingTop="16dp"
+            android:textOff="Bacon"
+            android:textOn="Bacon"
+            android:textScaleX=".5" />
+
+        <ToggleButton
+            android:id="@+id/toggle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_pepper"
+            android:paddingBottom="16dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="16dp"
+            android:textOff="Peppers"
+            android:textOn="Peppers"
+            android:textScaleX=".5" />
+
+        <ToggleButton
+            android:id="@+id/toggle5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:drawableTop="@drawable/ic_onion"
+            android:paddingBottom="16dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="48dp"
+            android:paddingTop="16dp"
+            android:textOff="Onion"
+            android:textOn="Onion"
+            android:textScaleX=".5" />
+
+        <ToggleButton
+            android:id="@+id/toggle6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_mushrooms"
+            android:paddingBottom="16dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="16dp"
+            android:textOff="Mushroom"
+            android:textOn="Mushroom"
+            android:textScaleX=".5" />
+
+        <ToggleButton
+            android:id="@+id/toggle7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_olives"
+            android:paddingBottom="16dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="16dp"
+            android:textOff="Olives"
+            android:textOn="Olives"
+            android:textScaleX=".5" />
+
+        <ToggleButton
+            android:id="@+id/toggle8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:drawableTop="@drawable/ic_pineapple"
+            android:paddingBottom="16dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="16dp"
+            android:textOff="Pineapple"
+            android:textOn="Pineapple"
+            android:textScaleX=".5" />
+
+        <ToggleButton
+            android:id="@+id/toggle9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_broccoli"
+            android:paddingBottom="16dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="44dp"
+            android:paddingTop="16dp"
+            android:textOff="Broccoli"
+            android:textOn="Broccoli"
+            android:textScaleX=".5" />
+    </android.support.v7.widget.GridLayout>
+
+    <ImageView
+        android:id="@+id/pizza_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="40dp"
+        android:scaleX="3"
+        android:scaleY="3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/size_spinner"
+        app:srcCompat="@drawable/ic_pizza_3"
+        android:layout_marginEnd="88dp" />
+
+    <Button
+        android:id="@+id/checkout_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:drawableRight="@drawable/ic_checkout"
+        android:paddingBottom="16dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="16dp"
+        android:text="Checkout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/button"/>
+
+    <ListView
+        android:id="@+id/list_view2"
+        android:layout_width="179dp"
+        android:layout_height="221dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/size_spinner" />
+
+    <TextView
+        android:id="@+id/text_total"
+        android:layout_width="137dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginRight="0dp"
+        android:background="@drawable/text_box"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkout_btn"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
